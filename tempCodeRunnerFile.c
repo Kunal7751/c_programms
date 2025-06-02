@@ -1,15 +1,12 @@
 #include<stdio.h>
-int main(){
-int ch;
-printf("Enter the char: ");
-scanf(" %c", &ch);
-
-if(ch >= 'A' && ch <= 'Z')
+int main()
 {
-    printf("The char is lowercase");
-}
-else{
-    printf("The char is uppercase");
-}
-return 0;
+    double a,b,product;
+    printf("Enter the floating value");
+    scanf("%lf %lf",&a,&b);
+
+    product = a*b;
+    printf("The mul of two floating point is %.1lf * %.2lf = %.2lf",a,b,product);
+    return 0;
+
 }
